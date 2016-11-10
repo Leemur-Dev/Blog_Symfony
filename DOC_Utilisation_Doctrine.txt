@@ -1,0 +1,42 @@
+==================
+Generer une table:
+==================
+php bin/console generate:doctrine:entity
+
+=======================================================
+Generer la requete de creation (verif non obligatoire):
+=======================================================
+php bin/console doctrine:schema:update --dump-sql
+
+=================
+Ajouter la table:
+=================
+php bin/console doctrine:schema:update --force
+
+=====================================================
+Ajouter get/set d'une attribut ajouté dans une entity
+=====================================================
+php bin/console doctrine:generate:entities <NomBundle:NomEntity>
+
+==============================
+Generer repository si manquant
+==============================
+Declarer le repository dans le fichier de l'entité correspondante (repositoryClass=.............)
+php bin/console doctrine:generate:entities [NomBundle]
+
+==========================
+Importer une BDD existante
+==========================
+1/ Verifier la bdd dans le fichier app/config/parameters.yml
+2/ Cree un Bundle
+3/ Verifier dans app/Appkernel si on a : new [nomBundle]\[nomBundle](),
+4/ Generation [type] dans le bundle :
+	
+	php bin/console doctrine:mapping:convert [type] ./src/[NomBundle]/Resources/config/doctrine/metadata/orm --from-database --force
+
+5/Generer les entités
+
+	php bin/console doctrine:mapping:import [NomBundle] annotation
+	php bin/console doctrine:generate:entities [NomBundle]
+
+6/ Soyez content ;)

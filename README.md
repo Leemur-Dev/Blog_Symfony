@@ -1,4 +1,4 @@
-gro_blog
-========
-
-A Symfony project created on November 5, 2016, 3:53 pm.
+=======
+# Blog_Symfony
+Tuto/Projet Symfony pour HMIN302 E-Application
+>>>>>>> 5ebdcb33ca191fa122452c1b680e211095e49a95

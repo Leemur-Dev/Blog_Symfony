@@ -1,0 +1,3 @@
+travel_blog_homepage:
+    path:     /
+    defaults: { _controller: TravelBlogBundle:Default:index }

@@ -1,3 +1,7 @@
+travel_blog:
+    resource: "@TravelBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
 grd_blog:
     resource: "@GrdBlogBundle/Controller/"
     type:     annotation

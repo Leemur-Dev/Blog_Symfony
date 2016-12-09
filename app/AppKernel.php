@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             #new AppBundle\AppBundle(),
             new Grd\BlogBundle\GrdBlogBundle(),
             new Travel\BlogBundle\TravelBlogBundle(),
+	    new FOS\UserBundle\FOSUserBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

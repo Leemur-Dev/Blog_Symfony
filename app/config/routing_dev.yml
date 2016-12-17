@@ -1,3 +1,7 @@
+travel_blog:
+    resource: "@TravelBlogBundle/Controller/"
+    type:     annotation
+
 _wdt:
     resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
     prefix:   /_wdt

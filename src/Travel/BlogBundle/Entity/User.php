@@ -16,11 +16,15 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    /**
+     * @ORM\Column(type="string", length=30)
+     */
+    protected $pseudo;
 
     public function __construct()
     {
-        parent::__construct();
 
+        parent::__construct();
     }
 }
 ?>

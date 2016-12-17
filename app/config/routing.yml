@@ -1,6 +1,6 @@
 travel_blog:
-    resource: "@TravelBlogBundle/Resources/config/routing.yml"
-    prefix:   /
+    resource: "@TravelBlogBundle/Controller/"
+    type:     annotation
 
 #grd_blog:
 #    resource: "@GrdBlogBundle/Controller/"
@@ -29,5 +29,3 @@ fos_user_change_password:
 #app:
 #    resource: "@AppBundle/Controller/"
 #    type:     annotation
-
-

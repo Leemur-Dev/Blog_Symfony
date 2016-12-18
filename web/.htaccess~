@@ -18,11 +18,7 @@ DirectoryIndex app.php
 </IfModule>
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On    
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ app.php [QSA,L]
-    RewriteBase /
-
+    RewriteEngine On
 
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the

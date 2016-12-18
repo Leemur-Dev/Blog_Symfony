@@ -1,4 +1,0 @@
-services:
-#    grd_blog.example:
-#        class: Grd\BlogBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]

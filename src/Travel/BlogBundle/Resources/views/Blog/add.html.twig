@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<form id="save" action="/save" method="post">
+  <div class="input-field col s12 m8 l8 ">
+    <h2>Ajouter un post</h2>
+    <!--    <div class="input-field col s12">-->
+    <input type="text" name="title" placeholder="Titre" value="" class="validate">
+    </div>
+    <div id="summernote"></div>
+    <input type="text" id="text" name="text" value="" hidden>
+    <input class="waves-effect waves-light btn green right" type="submit" name="button" value="Enregistrer">
+
+
+</form>
+
+{% block javascript %}
+<script type="text/javascript">
+$('#save').submit(function(e) {
+  // e.preventDefault();
+  $('#text').val($('#summernote').summernote('code'));
+});
+</script>
+{% endblock %}
+{% endblock %}

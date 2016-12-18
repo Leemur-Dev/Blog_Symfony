@@ -1,9 +1,65 @@
 h1 {
   color: #f8c1c3;
-  background-color: lightblue;
 }
 
-aside {
-    background-color: crimson;
-    color: forestgreen;
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+/********************mise en page ****************/
+
+
+/*****************Nav Bar **********************/
+nav ul li:hover {
+   background-color: white;
+}
+
+#logo{
+
+  width : 50px;
+}
+
+#image_mer{
+  width: 70px;
+}
+nav .amber.lighten-2 a:hover{
+  color:blue;
+}
+
+nav .brand-logo a:hover{
+  text-decoration: none;
+}
+
+a:active a:hover{
+  text-decoration: none;
+}
+
+/******************** Parallax **************************/
+.parallax-container .parallax img{
+  display: inline-block;
+
+}
+
+body .parallax-container {
+  height : 300px;
+}
+
+.parallax-container .parallax{
+  height : 300px;
+}
+
+
+
+/******************** Aside******************************/
+aside .card.small{
+
+    margin : 10px;
+    padding: 20px;
+    border:20px;
 }

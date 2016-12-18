@@ -36,8 +36,8 @@
 
       <a href="/" class="brand-logo">
         <img id="logo" src="{{ asset('image/logo_mountain.png') }}"/> Travel world</a>
-
-        <!------ Bar de navigation morizontale-------------->
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <!------ Bar de navigation horizontale-------------->
         <ul class="right hide-on-med-and-down">
           <li><a href="/" class="Accueil">Accueil</a></li>
           <!--  <li><a href="#" class="Articles">Articles</a></li>-->
@@ -55,7 +55,7 @@
         </ul>
 
         <!------ Bar de navigation mobile-------------->
-        <ul class="side-nav" id="nav-mobile">
+        <ul class="side-nav" id="mobile-demo">
           <li><a href="/" class="Accueil">Accueil</a></li>
           <!--<li><a href="#" class="Articles">Articles</a></li>-->
           <li><a href="#" class="Inscription">Inscription</a></li>
@@ -70,7 +70,6 @@
             {% endif %}
           </li>
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
     {% endblock %}
